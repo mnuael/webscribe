@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="|${blogName}|">Welcome</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h1 th:text="|#{welcome} ${blogName}|">Welcome</h1>
+<div>
+    <p><span th:text="#{intro.message}">Introduction</span></p>
+</div>
+<div>
+    <ul>
+        <li><a href="" th:href="@{/week}">Weeks</a></li>
+    </ul>
+</div>
+</body>
+</html>
