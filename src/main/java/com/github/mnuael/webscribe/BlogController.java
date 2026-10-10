@@ -21,6 +21,6 @@ public class BlogController {
     @GetMapping("/")
     public String getHome(Model model) {
         model.addAttribute("blogName", blogName);
-        return "home";
+        return "home/home";
     }
 }
